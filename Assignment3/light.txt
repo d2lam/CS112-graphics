@@ -1,0 +1,18 @@
+
+Vertex color = 
+(material emission) + 
+(global ambient)*(material ambient) +
+summation(1/( k1+ k2d + k3d 2)) * 
+[
+(light ambient)*
+(material ambient) + 
+(max{L.N, 0})*
+(light diffuse)*
+(material diffuse)+
+(max{H.N,0})n *
+(light specular)*
+(material specular) 
+]
+
+my_glLightfv();
+

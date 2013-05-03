@@ -1,0 +1,18 @@
+﻿Build started 07/03/2013 11:55:25.
+     1>Project "C:\Users\evan\Documents\Visual Studio 2012\Projects\Assignment3\Assignment3\Assignment3.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt ..\main.cpp
+         main.cpp
+     1>c:\users\evan\documents\visual studio 2012\projects\assignment3\main.cpp(138): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files\microsoft visual studio 11.0\vc\include\stdio.h(218) : see declaration of 'fopen'
+       Link:
+         C:\Program Files\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\evan\Documents\Visual Studio 2012\Projects\Assignment3\Debug\Assignment3.exe" /INCREMENTAL /NOLOGO opengl32.lib glu32.lib glut32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\evan\Documents\Visual Studio 2012\Projects\Assignment3\Debug\Assignment3.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\evan\Documents\Visual Studio 2012\Projects\Assignment3\Debug\Assignment3.lib" /MACHINE:X86 Debug\geometry.obj
+         Debug\inputModule.obj
+         Debug\main.obj
+         Debug\PLY.obj
+         Assignment3.vcxproj -> C:\Users\evan\Documents\Visual Studio 2012\Projects\Assignment3\Debug\Assignment3.exe
+     1>Done Building Project "C:\Users\evan\Documents\Visual Studio 2012\Projects\Assignment3\Assignment3\Assignment3.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.28

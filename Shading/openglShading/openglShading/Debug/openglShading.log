@@ -1,0 +1,23 @@
+﻿Build started 3/14/2013 11:16:38 AM.
+     1>Project "E:\Shading\openglShading\openglShading\openglShading.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\..\sjiang4_CS112_A4Package\CS112_A4Package\GLSL\display.cpp
+         display.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Shading\openglShading\Debug\openglShading.exe" /INCREMENTAL /NOLOGO opengl32.lib glu32.lib glut32.lib E:\sjiang4_CS112_A4Package\CS112_A4Package\GLSL\lib\glew32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\Shading\openglShading\Debug\openglShading.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\Shading\openglShading\Debug\openglShading.lib" /MACHINE:X86 Debug\display.obj
+         Debug\FileRead.obj
+         Debug\main.obj
+         Debug\mouse.obj
+         Debug\PLYLoader.obj
+         Debug\Points.obj
+         Debug\Primitives.obj
+         Debug\setupShaders.obj
+         Debug\textfile.obj
+         Debug\Vertices.obj
+         ..\..\..\sjiang4_CS112_A4Package\CS112_A4Package\GLSL\glew32.lib
+         openglShading.vcxproj -> E:\Shading\openglShading\Debug\openglShading.exe
+     1>Done Building Project "E:\Shading\openglShading\openglShading\openglShading.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:04.52

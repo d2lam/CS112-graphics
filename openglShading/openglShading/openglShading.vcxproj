@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{68F185F4-630C-44ED-B17C-EA68AFBE4C81}</ProjectGuid>
+    <RootNamespace>openglShading</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;glut32.lib;C:\Users\evan\Documents\Visual Studio 2012\Projects\openglShading\openglShading\GLSL\lib\glew32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="..\Debug\color.frag" />
+    <None Include="..\Debug\color.vert" />
+    <None Include="GLSL\bunny.ply" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GLSL\display.cpp" />
+    <ClCompile Include="GLSL\FileRead.cpp" />
+    <ClCompile Include="GLSL\main.cpp" />
+    <ClCompile Include="GLSL\mouse.cpp" />
+    <ClCompile Include="GLSL\PLYLoader.cpp" />
+    <ClCompile Include="GLSL\Points.cpp" />
+    <ClCompile Include="GLSL\Primitives.cpp" />
+    <ClCompile Include="GLSL\setupShaders.cpp" />
+    <ClCompile Include="GLSL\textfile.cpp" />
+    <ClCompile Include="GLSL\Vertices.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GLSL\inc\Color.h" />
+    <ClInclude Include="GLSL\inc\CS112.h" />
+    <ClInclude Include="GLSL\inc\essentials.h" />
+    <ClInclude Include="GLSL\inc\geometry.h" />
+    <ClInclude Include="GLSL\inc\Mat4x4.h" />
+    <ClInclude Include="GLSL\inc\PLY.h" />
+    <ClInclude Include="GLSL\inc\textfile.h" />
+    <ClInclude Include="GLSL\inc\Vec2.h" />
+    <ClInclude Include="GLSL\inc\Vec3.h" />
+    <ClInclude Include="GLSL\PLYLoader.h" />
+    <ClInclude Include="GLSL\Points.h" />
+    <ClInclude Include="GLSL\Primitives.h" />
+    <ClInclude Include="GLSL\Vertices.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
